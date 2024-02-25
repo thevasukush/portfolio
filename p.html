@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasu Kush</title>
+    <link rel="stylesheet" href="p.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700& display=swap" rel="stylesheet">
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+body{
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Poppins',sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: gray;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color:black;
+    font-size: 1.02rem;
+}
+main hr{
+    border: 0;
+    background: orange;
+    height: 1.2px;
+    margin: 60px 84px;
+}
+.left{
+    font-size: 1.5rem;
+    color:black;
+}
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    margin: 130px 0;
+}
+.firstsection > div{
+    width:30% ;
+}
+.leftsection{
+    font-size: 1.8rem;
+    
+
+}
+.leftsection .buttons{
+padding: 9px 0;
+}
+.leftsection .btn{
+    padding: 14px;
+    background-color: grey;
+    color: black;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.rightsection img{
+    width: 400px;
+    height:auto;
+    padding-top: 0;
+  
+}
+.yellow{
+    color: orange;
+}
+#element{
+    color: orange;
+}
+.secondsection{
+    margin: auto;
+    max-width: 80vw;
+    height: 80vh;
+}
+.secondsection h1{
+    font: 1.9rem;
+}
+.text-gray{
+    color: gray;
+}
+.secondsection .box{
+    background-color: antiquewhite;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+.secondsection .vertical{
+    height: 93px;
+    width: 1px;
+    background-color: antiquewhite;
+    margin: 0 100px;
+}
+footer{
+    background-color: orange;;
+
+}
+.footer{
+    display: flex;
+    padding: 10px 80px;
+    justify-content: space-evenly;
+}
+.footer .footer-first{
+    color: black;
+    font-size: 30px;
+}
+.footer .footer-second{
+    color: black;
+}
+.footer .footer-third{
+    color: black;
+}
+.footer > div{
+    width: 80px;
+}
+footer .text-center{
+    color: black;
+    text-align: center;
+    padding: 12px 0;
+}
+@media screen and (max-width: 300px) {
+  footer{
+    display: none;
+  }
+  .box{
+    flex-direction: column;
+  }
+  .firstsection{
+    flex-direction: column-reverse;
+  }
+  .secondsection .vertical{
+    height: unset;
+  }
+  .vertical-title,.vertical-desc{
+    left: 45px;
+  }
+}
+  </style>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="left">Vasu's Portfolio</div>
+        <div class="right">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="firstsection">
+       <div class="leftsection">Hi, My name is <span class="yellow">Vasu Kush.</span>
+        <div>I am a passionate</div>
+        <span id="element"></span>
+        <div class="buttons">
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit Github</button>
+        </div>
+       </div>
+          
+       <div class="rightsection"><img src="v.jpg" alt=""></div>
+    </section>
+    <hr>
+    <section class="secondsection">
+        <span class="text-gray">What I have done so far?</span>
+        <h1>Skiils</h1>
+        <div class="box">
+            <div class="vertical"></div>
+            <div class="vertical"></div>
+            <div class="vertical"></div>
+            <div class="vertical"></div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer">
+        <div class="footer-first">Vasu's Developer Portfolio</div>
+        <div class="footer-second">
+            <ul><li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="footer-third">
+            <ul><li>LinkedIn</li>
+            <li>Github</li>
+        <li>Twitter</li></ul>
+        </div>
+        <div class="footer-fourth"></div>
+    </div>
+    <div class="text-center">Copyright &#169 rowdyvasukush.com-All rights reserved.</div>
+</footer>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+ <!-- Setup and start animation! -->
+ <script>
+    var typed = new Typed('#element', {
+      strings: ['Software Developer.', 'Web Developer.'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+</html>
